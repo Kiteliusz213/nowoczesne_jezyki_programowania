@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Klinika Weterynaryjna</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/jumbotron.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+</head>
+<body onload="main()">
+<div id="header-placeholder"></div>
+
+<main class="main">
+    <div id="jumbotron-placeholder">
+        <!-- Tutaj będzie wyświetlany zegar -->
+    </div>
+
+    <!-- Opis usług -->
+    <section>
+        <h2>Nasze Usługi Weterynaryjne</h2>
+        <p>
+            W klinice weterynaryjnej zapewniamy kompleksową opiekę dla Twojego pupila. Oferujemy regularne badania diagnostyczne, szczepienia dostosowane do potrzeb zwierząt, profesjonalną chirurgię, w tym zabiegi operacyjne oraz całościową opiekę stomatologiczną. Ponadto, zajmujemy się leczeniem chorób skóry, prowadzimy profilaktykę zdrowotną oraz udzielamy porad żywieniowych.
+        </p>
+
+    </section>
+    <img src="./assets/dog.png" alt="Piesek" style="max-width: 100%; height: auto;">
+
+    <!-- Opis kliniki -->
+    <section>
+        <p>
+            Klinika Weterynaryjna "Zdrowy Pupil" to nie tylko miejsce leczenia, ale prawdziwe centrum troski o zdrowie i dobrostan zwierząt. Nasza misja to zapewnić kompleksową i empatyczną opiekę weterynaryjną dla Twoich pupili.
+        </p>
+        <p>
+            Nasz zespół składa się z wykwalifikowanych weterynarzy, którzy nie tylko posiadają bogate doświadczenie, ale także pasję do pracy z zwierzętami. Jesteśmy tu, aby zapewnić profesjonalne i indywidualne podejście do każdego pacjenta.
+        </p>
+        <p>
+            W "Zdrowy Pupil" stawiamy na nowoczesne podejście do leczenia, korzystając z najnowszych technologii i metod diagnostycznych. Dzięki temu możemy skutecznie diagnozować i leczyć różnorodne schorzenia, dbając o zdrowie i szczęście Twoich pupili.
+        </p>
+        <p>
+            Zapraszamy do naszej kliniki, gdzie troszczymy się o zdrowie i dobrostan zwierząt, sprawiając, że wizyta u weterynarza stanie się pozytywnym doświadczeniem dla każdego czworonoga.
+        </p>
+    </section>
+    <img src="./assets/wet.png" alt="Piesek" style="max-width: 100%; height: auto;">
+    <!-- Przedstawienie zespołu -->
+    <section>
+        <p>Nasz zespół to grupa pasjonatów, którzy połączyli swoją miłość do zwierząt z wieloletnim doświadczeniem w dziedzinie weterynarii. Każdy z nas to nie tylko wykwalifikowany weterynarz, ale również prawdziwy miłośnik zwierząt, gotowy oddać się w pełni trosce o zdrowie i dobrostan pupila.</p>
+        <p>Nasza praca opiera się na holistycznym podejściu do opieki weterynaryjnej, gdzie nie tylko eliminujemy schorzenia, ale także dbamy o ogólne dobre samopoczucie zwierząt. Nasz zespół doskonale rozumie, że każde zwierzę to jednostka o unikalnych potrzebach i charakterze, dlatego nasze podejście jest indywidualne dla każdego pacjenta.</p>
+        <p>Doświadczenie, wiedza i zaangażowanie pozwalają nam świadczyć kompleksową opiekę, obejmującą profilaktykę, diagnostykę, leczenie oraz wsparcie właścicieli w dbaniu o zdrowie swoich pupili. Naszym celem jest nie tylko skuteczne leczenie, ale także budowanie trwałych relacji z naszymi pacjentami i ich właścicielami.</p>
+        <p>Zapraszamy do naszej kliniki, gdzie zespół doświadczonych weterynarzy, z miłością do zwierząt, pracuje dla dobra każdego czworonoga. Tu znajdziesz nie tylko fachową opiekę, ale także wsparcie i zrozumienie dla Twojego pupila, który zawsze jest dla nas priorytetem.</p>
+    </section>
+
+
+    <!-- Mapa Google Maps -->
+    <div id="mapa"></div>
+
+</main>
+
+<!-- Stopka -->
+<div id="footer-placeholder"></div>
+
+<!-- Skrypty JavaScript -->
+<script src="./scripts/timer.js"></script>
+<script src="./scripts/render-element.js"></script>
+<script src="./components/header.js"></script>
+<script src="./components/jumbotron.js"></script>
+<script src="./components/footer.js"></script>
+<script src="./scripts/main.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=TWOJ_KLUCZ_API&callback=initMap" async defer></script>
+</body>
+</html>

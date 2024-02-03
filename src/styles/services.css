@@ -1,0 +1,29 @@
+/* styles/services.css */
+
+.services-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.services-content h2 {
+    color: #333;
+}
+
+.services-content h3 {
+    color: #555;
+}
+
+.services-content p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.services-content .price {
+    color: #e44d26; /* Kolor cen */
+    font-weight: bold;
+}

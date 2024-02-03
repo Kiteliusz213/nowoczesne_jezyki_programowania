@@ -1,0 +1,82 @@
+<!-- Plik: reservation.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Klinika Weterynaryjna - Zarezerwuj Wizytę</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <style>
+
+        form {
+            width: 50%;
+            margin: 20px auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body onload="main()">
+<div id="header-placeholder"></div>
+
+<main class="main">
+    <section>
+        <h2>Zarezerwuj Wizytę</h2>
+        <p>
+            Aby zarezerwować wizytę dla swojego pupila, prosimy wypełnić poniższy formularz.
+        </p>
+
+        <!-- Formularz rezerwacji -->
+        <form id="reservationForm">
+            <label for="petName">Imię zwierzaka:</label>
+            <input type="text" id="petName" name="petName" required>
+
+            <label for="ownerName">Imię właściciela:</label>
+            <input type="text" id="ownerName" name="ownerName" required>
+
+            <label for="email">Adres email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Numer telefonu:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="appointmentDate">Data wizyty:</label>
+            <input type="date" id="appointmentDate" name="appointmentDate" required>
+
+            <label for="appointmentTime">Godzina wizyty:</label>
+            <input type="time" id="appointmentTime" name="appointmentTime" required>
+
+            <button type="submit">Zarezerwuj Wizytę</button>
+        </form>
+    </section>
+</main>
+
+<div id="footer-placeholder"></div>
+
+<!-- Skrypty JavaScript -->
+<script src="./scripts/timer.js"></script>
+<script src="./scripts/render-element.js"></script>
+<script src="./components/header.js"></script>
+<script src="./components/footer.js"></script>
+<script src="./scripts/main.js"></script>
+<script src="./scripts/reservation.js"></script>
+</body>
+</html>

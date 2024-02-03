@@ -1,0 +1,14 @@
+/* jumbotron.css */
+.jumbotron img {
+    width: 100%;
+}
+
+.jumbotron-content {
+    position: relative;
+}
+
+#timer {
+    position: absolute;
+    right: 30px;
+    bottom: 0;
+}

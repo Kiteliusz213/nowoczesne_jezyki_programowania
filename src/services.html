@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Klinika Weterynaryjna</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/jumbotron.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+</head>
+<body onload="main()">
+<div id="header-placeholder"></div>
+
+
+<main class="main">
+
+    <div class="services-content">
+        <h2>Nasze Usługi Weterynaryjne i Cennik</h2>
+
+        <section>
+            <h3>Badania Diagnostyczne</h3>
+            <p>Regularne badania diagnostyczne dla zwierząt, w tym badania krwi, moczu, RTG itp.</p>
+            <p class="price">Cena: 150 zł</p>
+        </section>
+
+        <section>
+            <h3>Szczepienia</h3>
+            <p>Szczepienia dostosowane do potrzeb zwierząt, zgodnie z obowiązującym kalendarzem szczepień.</p>
+            <p class="price">Cena: 80 zł</p>
+        </section>
+
+        <section>
+            <h3>Chirurgia</h3>
+            <p>Profesjonalne zabiegi operacyjne, w tym sterylizacje, usunięcie guzów, itp.</p>
+            <p class="price">Cena: od 300 zł (zależnie od rodzaju operacji)</p>
+        </section>
+        <img src="./assets/kot.png" alt="Kot" style="max-width: 100%; height: auto;">
+
+    </div>
+</main>
+<!-- Stopka -->
+<div id="footer-placeholder"></div>
+
+
+<script src="./scripts/render-element.js"></script>
+
+<script src="./components/header.js"></script>
+
+<!-- Skrypty JavaScript -->
+<script src="./scripts/timer.js"></script>
+<script src="./scripts/render-element.js"></script>
+<script src="./components/header.js"></script>
+<script src="./components/jumbotron.js"></script>
+<script src="./scripts/main.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=TWOJ_KLUCZ_API&callback=initMap" async defer></script>
+<script src="./components/footer.js"></script>
+</body>
+</html>

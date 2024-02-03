@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Klinika Weterynaryjna - Harmonogram Pracowników</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body onload="main()">
+<div id="header-placeholder"></div>
+
+<main class="main">
+    <section>
+        <h2>Harmonogram Pracowników</h2>
+        <p>
+            Tutaj znajdziesz aktualny harmonogram pracy naszych pracowników.
+            W tygodniu przyjmujemy wszystkich małych pacjentów. W weekendy i święta tylko nagłe przypadki.
+        </p>
+
+        <!-- Tabela z harmonogramem pracy pracowników w dni robocze -->
+        <table>
+            <thead>
+            <tr>
+                <th></th>
+                <th>Poniedziałek</th>
+                <th>Wtorek</th>
+                <th>Środa</th>
+                <th>Czwartek</th>
+                <th>Piątek</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>8:00 - 12:00</td>
+                <td>Dr. Kowalski</td>
+                <td>Dr. Nowak</td>
+                <td>Dr. Wiśniewski</td>
+                <td>Dr. Nowicka</td>
+                <td>Dr. Lewandowski</td>
+            </tr>
+            <tr>
+                <td>12:00 - 16:00</td>
+                <td>Dr. Nowak</td>
+                <td>Dr. Wiśniewski</td>
+                <td>Dr. Nowicka</td>
+                <td>Dr. Lewandowski</td>
+                <td>Dr. Kowalski</td>
+            </tr>
+            </tbody>
+        </table>
+
+        <!-- Tabela z harmonogramem pracy pracowników w weekendy i święta -->
+        <h3>Weekendy i Święta</h3>
+        <table>
+            <thead>
+            <tr>
+                <th></th>
+                <th>Sobota</th>
+                <th>Niedziela</th>
+                <th>Święta</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>8:00 - 12:00</td>
+                <td>Dr. Nowicka</td>
+                <td>Dr. Kowalski</td>
+                <td>Dr. Wiśniewski</td>
+            </tr>
+            <tr>
+                <td>12:00 - 16:00</td>
+                <td>Dr. Kowalski</td>
+                <td>Dr. Nowak</td>
+                <td>Dr. Wiśniewski</td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+</main>
+
+<div id="footer-placeholder"></div>
+
+<!-- Skrypty JavaScript -->
+<script src="./scripts/timer.js"></script>
+<script src="./scripts/render-element.js"></script>
+<script src="./components/header.js"></script>
+<script src="./scripts/main.js"></script>
+<script src="./components/footer.js"></script>
+</body>
+</html>
